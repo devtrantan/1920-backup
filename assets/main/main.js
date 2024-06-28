@@ -15,25 +15,25 @@ orderLink.addEventListener('click', function(event) {
     }
 );
 
-// //Event click select pick on pop up
-// document.getElementById('pickupButton').addEventListener('click', function() {
-//     var pickup = 1;
-//     var method = 'pickup';
-//     var ConfirmMethod = '';
+//Event click select pick on pop up
+document.getElementById('pickupButton').addEventListener('click', function() {
+    var pickup = 1;
+    var method = 'pickup';
+    var ConfirmMethod = '';
 
-//     if (localStorage.getItem('pickup') === '1') {
-//         ConfirmMethod = 'pickup';
-//         var acheckLink = document.getElementById('acheck');
-//         acheckLink.click();
+    if (localStorage.getItem('pickup') === '1') {
+        ConfirmMethod = 'pickup';
+        var acheckLink = document.getElementById('acheck');
+        acheckLink.click();
 
-//     } else {
-//         window.location.href = '/order';
-//     }
+    } else {
+        window.location.href = '/order';
+    }
 
-//     localStorage.setItem('pickup', pickup);
-//     localStorage.setItem('ConfirmMethod', ConfirmMethod);
-//     localStorage.setItem('method', method);
-// });
+    localStorage.setItem('pickup', pickup);
+    localStorage.setItem('ConfirmMethod', ConfirmMethod);
+    localStorage.setItem('method', method);
+});
 
 
 //Event click view map on pop up
